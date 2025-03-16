@@ -1,10 +1,10 @@
 /* === accounts app styles === */
+
 /* login page */
 .login-form {
     width: 60%;
     margin: 30px auto;
 }
-
 
 .profile-image {
     max-width: 100px;
@@ -35,4 +35,30 @@
 
 .profile-items .item-text-box {
     min-height: 70px;
+}
+
+/* Example CSS variable usage */
+:root {
+    --main-width: 60%;
+    --small-font: 0.6em;
+    --medium-font: 0.7em;
+    --input-margin: 5px 0;
+}
+
+.login-form {
+    width: var(--main-width);
+    margin: 30px auto;
+}
+
+.btn-xs {
+    font-size: var(--small-font);
+}
+
+.profile-buttons .btn {
+    font-size: var(--medium-font);
+}
+
+.profile-items input,
+.profile-items select {
+    margin: var(--input-margin);
 }
