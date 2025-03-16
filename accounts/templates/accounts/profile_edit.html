@@ -17,67 +17,67 @@
             <div class="col-10 item-details profile-items">
                 <div class="row px-3">
                     <div class="col-2">
-                        <small class="text-muted">
+                        <label for="username" class="text-muted">
                             <i class="far fa-user"></i>
                             نام کاربری:
-                        </small>
+                        </label>
                     </div>
                     <div class="col-4">
                         {{ user.username }}
                     </div>
                     <div class="col-2 pl-0">
-                        <small class="text-muted">
+                        <label for="gender" class="text-muted">
                             <i class="far fa-clock"></i>
                             جنسیت:
-                        </small>
+                        </label>
                     </div>
                     <div class="col-4">
                         {{ profile_form.gender }}
                     </div>
                     <div class="w-100 my-1"></div>
                     <div class="col-2">
-                        <small class="text-muted">
+                        <label for="first_name" class="text-muted">
                             <i class="far fa-address-card"></i>
                             نام:
-                        </small>
+                        </label>
                     </div>
                     <div class="col-4">
                         {{ user_form.first_name }}
                     </div>
                     <div class="col-2 pl-0">
-                        <small class="text-muted">
+                        <label for="last_name" class="text-muted">
                             <i class="far fa-address-card"></i>
                             نام خانوادگی:
-                        </small>
+                        </label>
                     </div>
                     <div class="col-4">
                         {{ user_form.last_name }}
                     </div>
                     <div class="w-100 my-1"></div>
                     <div class="col-2">
-                        <small class="text-muted">
+                        <label for="email" class="text-muted">
                             <i class="far fa-envelope-open"></i>
                             ایمیل:
-                        </small>
+                        </label>
                     </div>
                     <div class="col-4">
                         {{ user_form.email }}
                     </div>
                     <div class="col-2 pl-0">
-                        <small class="text-muted">
+                        <label for="mobile" class="text-muted">
                             <i class="fas fa-mobile-alt"></i>
                             تلفن همراه:
-                        </small>
+                        </label>
                     </div>
                     <div class="col-4">
                         {{ profile_form.mobile }}
                     </div>
                     <div class="w-100 my-1"></div>
                     <div class="col-2">
-                        <small class="text-muted">
+                        <label for="address" class="text-muted">
                             <i class="fas fa-home"></i>
                             آدرس:
-                        </small>
+                        </label>
                     </div>
                     <div class="col-10 item-text-box">
                         {{ profile_form.address }}
@@ -99,14 +99,14 @@
                 <div class="modal fade" id="profile-image-modal">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                          <div class="modal-body">
-                            {{ profile_form.profile_image }}
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-                          </div>
+                            <div class="modal-body">
+                                {{ profile_form.profile_image }}
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
