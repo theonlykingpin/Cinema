@@ -9,8 +9,8 @@
 {% endblock %}
 
 {% block main_content %}
-    <div class="row py-3">
-        <div class="col-8 item-details">
+    <section class="row py-3">
+        <div class="col-8 profile-details">
             <div class="row px-3">
                 <div class="col-4">
                     <small class="text-muted">
@@ -80,19 +80,21 @@
             </div>
         </div>
         <div class="col-4 text-center">
-        {% if profile.profile_image %}
-                <img class="profile-image" src="{{ profile.profile_image.url }}" alt="{{ profile }}">
-        {% endif %}
+            {% if profile.profile_image %}
+                <figure>
+                    <img class="profile-image" src="{{ profile.profile_image.url }}" alt="{{ profile }}">
+                </figure>
+            {% endif %}
             <div class="profile-buttons mt-4">
-                <a class="btn btn-secondary" href="{% url "accounts:profile_edit" %}">
+                <a class="btn btn-secondary" href="{% url "accounts:profile_edit" %}" aria-label="Edit Profile">
                     <i class="fas fa-edit"></i>
                     ویرایش نمایه
                 </a>
-                <a class="btn btn-warning" href="#">
+                <a class="btn btn-warning" href="#" aria-label="Change Password">
                     <i class="fas fa-key"></i>
                     تغییر گذرواژه
                 </a>
             </div>
         </div>
-    </div>
+    </section>
 {% endblock %}
